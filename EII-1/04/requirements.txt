@@ -1,0 +1,8 @@
+# requirements.txt
+
+# Hier werden die, fuer das Projekt benoetigten, Funktionsbibliotheken
+# bzw. Packages aufgefuehrt, um Sie mithilfe von pip installieren zu
+# zu koennen: pip install -r requirements.txt
+
+matplotlib
+numpy
