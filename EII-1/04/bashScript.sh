@@ -6,6 +6,9 @@ python3 -m venv venv
 # Starten / Aktivieren der virtuellen Umgebung
 source venv/bin/activate
 
+#pip updaten, falls Update vorhanden
+pip install --upgrade pip
+
 # Vorher angelegte requirements.txt anpingen und Inhalt installieren
 pip install -r requirements.txt
 

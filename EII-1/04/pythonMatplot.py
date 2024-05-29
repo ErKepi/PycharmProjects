@@ -1,20 +1,22 @@
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
 
-def f(x):
-    return 10 * (np.sin(x))**2
+# Erzeugen der x-Werte
+x = np.linspace(-10, 10, 100)
 
-x = np.linspace(0, 2 * np.pi, 1000)
+# Berechnen der y-Werte für die Funktion f(x) = x^2
+y = x ** 2
 
-y = f(x)
+# Erstellen der Wertetabelle
+wertetabelle = np.column_stack((x, y))
+print("Wertetabelle (x, f(x)):")
+print(wertetabelle)
 
-plt.figure(figsize=(10, 6))
-plt.plot(x, y, label=r'$f(x) = 10 \cdot (\sin(x))^2$', color='blue')
-
+# Visualisieren der Werte
+plt.plot(x, y, label='f(x) = x^2')
 plt.xlabel('x')
-plt.ylabel('y')
-plt.title('Graph von f(x)=10·(sin(x))2')
+plt.ylabel('f(x)')
+plt.title('Graph der Funktion f(x) = x^2')
 plt.legend()
-plt.grid(False)
-
+plt.grid(True)
 plt.show()
